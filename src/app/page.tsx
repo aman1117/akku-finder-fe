@@ -8,7 +8,7 @@ export default function Home() {
 
       <div className="flex min-h-screen items-center justify-center">
         {/* Inner container: white card with a border & some spacing */}
-        <div className="w-full max-w-[650px] bg-white border shadow-md rounded-md p-8">
+        <div className="w-full max-w-[650px] bg-white border shadow-md  p-8">
           <div className="flex flex-col items-center justify-center">
             {/* Title row */}
             <div className="flex items-center space-x-2 mt-4 mb-2">
