@@ -160,7 +160,7 @@ export const FileUpload = ({
                         )}
                     </div>
                     <span className="text-neutral-500 dark:text-neutral-400 text-sm p-4">
-                        Drag and drop your files here
+                        Drag and drop your pdf / image here
                     </span>
                 </div>
             </motion.div>

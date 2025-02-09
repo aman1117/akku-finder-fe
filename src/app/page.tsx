@@ -2,25 +2,33 @@ import { FileUpload } from "@/components/ui/file-upload";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col items-center justify-center">
-        <div className="mt-[600px] mb-2">
-          <span className="font-bold text-2xl sm:text-3xl ">
-            Made exclusively for
-          </span>
-          <span className="font-bold text-3xl  text-pink-600 ml-2">`Aakanksha`</span>
-        </div>
-        <div>
-          <span className="text-xl text-gray-500 ">
-            Make any pdf search enabled
-          </span>
-        </div>
-        <div className="mt-4 ">
-          <FileUpload />
-        </div>
+    // Outer wrapper: full screen with a soft gradient background
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-[#f7f9fc] to-[#fefefe]">
+      {/* Inner container: white card with a border & some spacing */}
+      <div className="w-full max-w-[650px] bg-white border shadow-md rounded-md p-8">
+        <div className="flex flex-col items-center justify-center">
+          {/* Title row */}
+          <div className="flex items-center space-x-2 mt-4 mb-2">
+            <span className="text-4xl font-extrabold text-black ">Made exclusively for </span>
+            <span className="sm:text-4xl font-extrabold text-pink-600 ml-2 inline-block underline decoration-dashed underline-offset-4">
+              Aakanksha
+            </span>
+          </div>
 
+          {/* Subtitle */}
+          <div >
+            <span className="text-xl text-gray-800">make any pdf / image</span>
+            <span className="text-xl font-bold text-blue-900 ml-2">
+              search enabled
+            </span>
+          </div>
 
+          {/* File upload component area */}
+          <div className="m-6 max-w-96 max-h-60">
+            <FileUpload />
+          </div>
+        </div>
       </div>
-    </div >
+    </div>
   );
 }
