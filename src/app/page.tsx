@@ -1,6 +1,6 @@
 import { FileUpload } from "@/components/ui/file-upload";
 import Gradient from "@/components/ui/gradient";
-
+import { SearchCheck } from "lucide-react";
 export default function Home() {
   return (
     // Outer wrapper: full screen with a soft gradient background
@@ -18,12 +18,14 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Subtitle */}
-            <div >
+            <div className=" flex items-center " >
               <span className="text-xl text-gray-800">make any pdf / image</span>
-              <span className="text-xl font-bold text-blue-900 ml-2">
-                search enabled
-              </span>
+              <div className="flex items-center space-x-1 mt-2 mb-2">
+                <SearchCheck className="text-blue-900 ml-2" />
+                <span className=" text-xl font-bold text-blue-900 ">
+                  search enabled
+                </span>
+              </div>
             </div>
 
             {/* File upload component area */}
