@@ -1,5 +1,4 @@
 import { FileUpload } from "@/components/ui/file-upload";
-import Image from "next/image";
 
 export default function Home() {
   return (
